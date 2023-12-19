@@ -32,7 +32,7 @@ For a more controlled environment, especially when managing dependencies, you ca
    docker run -it -e HUGGINGFACE_TOKEN=<token> ricksanchezchatbot
    ```
    
-   This command starts the container and opens an interactive terminal.
+   This command starts the container and opens an interactive terminal. You'll need to have access to the meta-llama/Llama-2-7b-chat-hf model on Hugging Face.
    
 3. To interact with the chatbot, use the command:
    <br>
