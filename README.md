@@ -29,7 +29,7 @@ For a more controlled environment, especially when managing dependencies, you ca
 1. Once the image is built, run the container:
    <br>
    ```
-   docker run -it ricksanchezchatbot
+   docker run -it -e HUGGINGFACE_TOKEN=<token> ricksanchezchatbot
    ```
    
    This command starts the container and opens an interactive terminal.
