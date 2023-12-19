@@ -1,5 +1,8 @@
+import os
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
+
+hf_token = os.getenv('HUGGINGFACE_TOKEN')
 
 def generate_response(full_prompt, max_length=100, num_beams=3):
     """
@@ -56,7 +59,7 @@ def generate_response(full_prompt, max_length=100, num_beams=3):
 
     return response_text
 # Load the fine-tuned model and tokenizer
-model = AutoModelForCausalLM.from_pretrained('RickSanchez-7b-q')
+model = AutoModelForCausalLM.from_pretrained('RickSanchez-7b-q', token=hf_token)
 tokenizer = AutoTokenizer.from_pretrained('RickSanchez-7b-q')
 
 # Set the system prompt as in your Jupyter notebook

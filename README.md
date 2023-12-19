@@ -1,4 +1,3 @@
-
 # Rick Sanchez Chatbot
 
 ![alt text](https://www.rollingstone.com/wp-content/uploads/2022/08/22-RAM-S6-KEY-ART-1080x1080-1-e1661990077221.png?w=831&h=554&crop=1)
