@@ -11,18 +11,31 @@ This project involves fine-tuning the Llama-2-chat model using Prompt Engineerin
 - Python 3.8 or above
 - CUDA-compatible GPU (Recommended for training)
 
-### Steps
-1. Clone the repository:
+### Using Docker
+For a more controlled environment, especially when managing dependencies, you can use Docker.
+
+#### Building the Docker Image
+1. Ensure Docker is installed on your system. If not, download and install it from the [Docker official website](https://www.docker.com/get-started).
+2. Navigate to the root directory of the cloned repository.
+3. Build the Docker image:
    ```
-   git clone [repository URL]
+   docker build -t ricksanchezchatbot .
    ```
-2. Install dependencies:
+   This command creates a Docker image named `ricksanchezchatbot`.
+
+#### Running the Docker Container
+1. Once the image is built, run the container:
    ```
-   pip install -r requirements.txt
+   docker run -it ricksanchezchatbot
+   ```
+   This command starts the container and opens an interactive terminal.
+2. To interact with the chatbot, use the command:
+   ```
+   python test.py
    ```
 
 ## Usage
-
+   
 ### Training the Model
 Run the Jupyter Notebook `RickSanchez-7b-q.ipynb` to start the fine-tuning process. Keep in mind you will need access to the Llama-2-chat model, which can be obtained [here](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
 
