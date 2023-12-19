@@ -18,7 +18,7 @@ For a more controlled environment, especially when managing dependencies, you ca
 1. Ensure Docker is installed on your system. If not, download and install it from the [Docker official website](https://www.docker.com/get-started).
 2. Navigate to the root directory of the cloned repository.
 3. Build the Docker image:
-   
+   <br>
    ```
    docker build -t ricksanchezchatbot .
    ```
@@ -27,7 +27,7 @@ For a more controlled environment, especially when managing dependencies, you ca
 
 #### Running the Docker Container
 1. Once the image is built, run the container:
-   
+   <br>
    ```
    docker run -it ricksanchezchatbot
    ```
@@ -35,7 +35,7 @@ For a more controlled environment, especially when managing dependencies, you ca
    This command starts the container and opens an interactive terminal.
    
 3. To interact with the chatbot, use the command:
-   
+   <br>
    ```
    python test.py
    ```
